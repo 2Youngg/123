@@ -1,0 +1,177 @@
+@media all and (orientation : portrait) {
+    html {
+        width: 100%;
+        height: 100%;
+    }
+
+    body {
+        max-width: 800px;
+        display: block;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+    }
+
+    .landscape{
+        width: 0%;
+        height: 0%;
+        display: none;
+    }
+
+    .end-cover {
+        display: table;
+        background-color: #48befe;
+        max-width: 640px;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+    }
+
+    .end-cover span {
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .end-cover .index {
+        width: 100%;
+        vertical-align: middle;
+    }
+
+    .last-button1 {
+        width: 15%;
+        position: absolute;
+        left: 2%;
+        top: 25%;
+    }
+
+    .last-button2 {
+        width: 15%;
+        position: absolute;
+        left: 2%;
+        top: 55%;
+    }
+    .last-look {
+        width: 15%;
+        position: absolute;
+        left: 24%;
+        top: 42%;
+    }
+    .last-time{
+        position: absolute;
+        font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        left: 52%;
+        top: 44%;
+        color: #fa4404;
+        font-size: 24px;
+        transform:rotate(90deg);
+    }
+    .last-count{
+        position: absolute;
+        font-family: Arial, Verdana, Geneva, Helvetica, sans-serif;
+        font-weight: bold;
+        text-align: center;
+        left: 41%;
+        top: 44%;
+        color: #fa4404;
+        font-size: 24px;
+        transform:rotate(90deg);
+    }
+
+    .last-button1:active, .last-button2:active, .last-look:active {
+        opacity: 0.8;
+    }
+
+	#share{
+		width: 96px;
+		height: 96px;
+		background-image: url(../img/arrow.png);
+		position: absolute;
+        right: 4%;
+        top: 5%;
+		display: none;
+	}
+
+
+
+
+    @media screen and (min-width: 768px) {
+        .button1 {
+            width: 12%;
+            position: absolute;
+            left: 39%;
+            top: 40%;
+            z-index: 0;
+        }
+
+        .button2 {
+            width: 10%;
+            position: absolute;
+            left: 28%;
+            top: 41%;
+            z-index: 0;
+        }
+
+        .button3 {
+            width: 10%;
+            position: absolute;
+            left: 16%;
+            top: 41%;
+            z-index: 0;
+        }
+
+        .bee {
+            width: 10%;
+            position: absolute;
+            top: 70%;
+            left: 41%;
+        }
+    }
+}
+
+
+
+@media all and (orientation : landscape) {
+    html{
+        width: 100%;
+        height: 100%;
+        margin: 0 0;
+        padding: 0 0;
+        background-color: #48befe;
+        overflow: hidden;
+    }
+
+    .end-cover , .swiper-container{
+        display: none;
+        width: 0px;
+        height: 0px;
+    }
+
+    .landscape{
+        display: table;
+        height: 100%;
+        margin: 0 auto;
+    }
+
+    .landscape span{
+        display: table-cell;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .landscape span img{
+        width: 80%;
+        vertical-align: middle;
+    }
+}
